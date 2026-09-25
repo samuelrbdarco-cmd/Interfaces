@@ -1,36 +1,39 @@
 body {
+    background: #ffffff;
     text-align: center;
-    background-color: antiquewhite;
+    height: 100vh;
+    font-family: Arial;
+    display: grid;
+    place-items: center;
 }
 
+.changecolor {
+    background-color: #9ac6fe;
+}
+
+form {
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #bec3c9, -5px -5px 10px white;
+}
 
 h1 {
-    color: cornflowerblue;
-    padding: 10px;
-    font-family: Arial;
+    color: #596575;
 }
 
-label{
-    background-color: cornflowerblue;
-    color: white;
-    padding: 5px;
+input,
+select,
+textarea {
+    border: 0;
+    padding: 6px;
+    border-radius: 6px;
+    box-shadow: inset 2px 2px 4px #bec3c9, inset -2px -2px 4px white;
 }
 
-option{
-    background-color: lightblue;
-}
-
-textarea{
-    background-color: white;
-    color: black;
-    padding: 5px;
-}
-
-input[type="submit"], input[type="reset"]{
-    background-color: cornflowerblue;
-    color: white;
-    padding: 5px;
-    border: none;
+input[type="submit"],
+input[type="reset"] {
+    margin-top: 10px;
+    color: #596575;
     cursor: pointer;
 }
 

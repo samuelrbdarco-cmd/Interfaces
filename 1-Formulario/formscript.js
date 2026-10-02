@@ -13,6 +13,7 @@ let datos = document.getElementById("formulario")
 let body = document.getElementById("body")
 console.log(document.querySelector("#Micampo"))
 
+
 datos.addEventListener('submit', function(event) {
     event.preventDefault();
     console.log(document.querySelector("#boton_submit"))

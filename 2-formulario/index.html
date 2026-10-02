@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <form id="formulario2">
+        <fieldset id="paso1" class=" paso_siguiente paso_visible">
+        <legend>Paso 1</legend>
+        <div class="contenido">
+            <hr>
+                <input type="text" id="nombre" placeholder="Nombre">
+            <hr>
+            <div class="contenido_boton">
+                <input type="submit" value="Siguiente" onclick="irAlPaso(event, 2)">
+            </div>
+        </div>
+        </fieldset>
+
+        <fieldset id="paso2" class="paso_siguiente">
+            <legend>Paso 2</legend>
+            <div class="contenido">
+            <hr>
+                <input type="password" id="contraseña" placeholder="Contraseña">
+            <hr>
+           <div class="contenido_boton">
+                <input type="submit" value="Siguiente" onclick="irAlPaso(event, 3)">
+           </div>
+            </div>
+        </fieldset>
+
+        <fieldset id="paso3" class="paso_siguiente">
+            <legend>Paso 3</legend>
+            <div class="contenido">
+                <hr>
+                <h1>Estas dentro!</h1>
+                <hr>
+            </div>
+        </fieldset>
+    </form>
+
+    <script src="formscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    place-items: center;
+    padding: 100px;
+    background-color: rgb(255, 254, 254);
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    border: auto;
+    border-style: solid;
+}
+
+.tabla_insertar_datos {
+    width: 300px;
+    margin-top: 50px;
+    margin-right: 800px;
+    box-sizing: border-box;
+}
+
+.tabla_lista{
+    margin-top: 100px;
+}
+

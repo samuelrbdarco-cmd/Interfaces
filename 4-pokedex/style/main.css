@@ -1,0 +1,99 @@
+/* Estilos generales de toda la página. */
+body {
+    width: 90%; /* La página ocupa el 90% del ancho de la ventana. */
+    margin: 20px auto; /* Deja espacio arriba y centra la página. */
+    font-family: Arial, sans-serif; /* Tipo de letra. */
+    color: #222; /* Color del texto. */
+    background-color: #f2f2f2; /* Color de fondo. */
+}
+
+/* Coloca el logo centrado y limita su tamaño. */
+.logo {
+    display: block; /* Permite centrar la imagen con margin auto. */
+    width: 300px; /* Ancho habitual del logo. */
+    max-width: 100%; /* Evita que se salga en pantallas estrechas. */
+    margin: 0 auto 30px; /* Centra el logo y deja espacio debajo. */
+}
+
+/* Pone la barra de botones y la información una junto a la otra. */
+.contenedor_pokemons {
+    display: flex; /* Coloca los elementos hijos en una fila. */
+    gap: 20px; /* Deja espacio entre la barra y la ficha. */
+    align-items: flex-start; /* Alinea ambos bloques por arriba. */
+}
+
+/* Estilos compartidos por la lista y el panel de información. */
+#barra_pokemons,
+#informacion_pokemons {
+    padding: 15px; /* Deja espacio entre el contenido y el borde. */
+    border: 2px solid #222; /* Dibuja un borde oscuro. */
+    border-radius: 10px; /* Redondea las esquinas. */
+    background-color: white; /* Fondo blanco para destacar los paneles. */
+}
+
+/* La barra lateral ocupa una parte del espacio disponible. */
+#barra_pokemons {
+    flex: 1; /* Proporción 1: ocupa menos espacio que la información. */
+}
+
+/* El panel de información es más ancho que la barra. */
+#informacion_pokemons {
+    flex: 3; /* Proporción 3: ocupa tres partes del espacio disponible. */
+}
+
+/* Aspecto y comportamiento de cada botón de Pokémon. */
+.boton-pokemon {
+    display: block; /* Cada botón aparece en su propia línea. */
+    width: 100%; /* El botón ocupa todo el ancho de la barra. */
+    margin-bottom: 8px; /* Separa un botón del siguiente. */
+    padding: 10px; /* Añade espacio dentro del botón. */
+    border: 1px solid #aaa; /* Borde gris claro. */
+    border-radius: 5px; /* Esquinas ligeramente redondeadas. */
+    background-color: #eee; /* Fondo gris claro. */
+    text-align: left; /* Coloca el nombre hacia la izquierda. */
+    cursor: pointer; /* Muestra una mano al pasar el ratón. */
+}
+
+/* Cambia el color al pasar el ratón o al seleccionar un Pokémon. */
+.boton-pokemon:hover,
+.boton-pokemon[aria-pressed="true"] {
+    background-color: #d8323b; /* Fondo rojo. */
+    color: white; /* Texto blanco para que contraste. */
+}
+
+/* Coloca la imagen y los datos de la ficha uno al lado del otro. */
+.ficha-pokemon {
+    display: flex; /* Ordena la imagen y los datos en una fila. */
+    align-items: center; /* Los centra verticalmente. */
+    gap: 20px; /* Deja espacio entre la imagen y los datos. */
+}
+
+/* Asigna espacio a la imagen dentro de la ficha. */
+.imagen-pokemon {
+    flex: 2; /* La imagen ocupa dos partes del espacio. */
+}
+
+/* Asigna algo más de espacio a los datos que a la imagen. */
+.detalles-pokemon {
+    flex: 3; /* Los datos ocupan tres partes del espacio. */
+}
+
+/* Destaca el nombre del Pokémon. */
+.detalles-pokemon h2 {
+    color: #b51f28; /* Color rojo oscuro. */
+}
+
+/* Pone en negrita los nombres de los datos, como "Tipo" o "Peso". */
+.datos-pokemon dt {
+    font-weight: bold;
+}
+
+/* Separa cada valor del siguiente y quita el margen lateral por defecto. */
+.datos-pokemon dd {
+    margin: 0 0 10px; /* Arriba 0, lados 0 y abajo 10 píxeles. */
+}
+
+/* Hace más cómoda la lectura de la descripción. */
+.descripcion-pokemon {
+    line-height: 1.5; /* Aumenta el espacio entre líneas. */
+}

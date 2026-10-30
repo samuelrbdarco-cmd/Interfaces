@@ -216,6 +216,9 @@ const InformacionPokemons = document.getElementById("informacion_pokemons");
 
 pokemons.forEach(pokemon => {
     const boton = document.createElement("button");
+    const boton_todos = document.createElement ("button");
+    boton_todos.className = "boton-todos";
+    boton_todos.innerText = "Todos"
     boton.className = "boton-pokemon";
     boton.innerText = pokemon.nombre;
 
